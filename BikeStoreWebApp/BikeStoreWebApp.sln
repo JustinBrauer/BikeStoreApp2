@@ -5,13 +5,13 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp", "BikeStoreWebApp\BikeStoreWebApp.csproj", "{B9BD7CD7-EA0E-4B34-A76C-D92B53F24266}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_Backend", "..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_Backend\BikeStoreWebApp_Backend.csproj", "{E37C68E0-F622-492E-A78C-0BFD38D3AA76}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_Backend", "..\..\BikeStoreWebApp\BikeStoreWebApp_Backend\BikeStoreWebApp_Backend.csproj", "{E37C68E0-F622-492E-A78C-0BFD38D3AA76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_Database", "..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_Database\BikeStoreWebApp_Database.csproj", "{02660542-59C7-4682-99E6-6B9722243875}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_Database", "..\..\BikeStoreWebApp\BikeStoreWebApp_Database\BikeStoreWebApp_Database.csproj", "{02660542-59C7-4682-99E6-6B9722243875}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_Middle", "..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_Middle\BikeStoreWebApp_Middle.csproj", "{FFDD190E-3840-422D-A90D-C3F974055884}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_Middle", "..\..\BikeStoreWebApp\BikeStoreWebApp_Middle\BikeStoreWebApp_Middle.csproj", "{FFDD190E-3840-422D-A90D-C3F974055884}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_UnitTestProject", "..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_UnitTestProject\BikeStoreWebApp_UnitTestProject.csproj", "{4E17C827-F3CF-4428-82AB-DBA9613FCAD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BikeStoreWebApp_UnitTestProject", "..\..\BikeStoreWebApp\BikeStoreWebApp_UnitTestProject\BikeStoreWebApp_UnitTestProject.csproj", "{4E17C827-F3CF-4428-82AB-DBA9613FCAD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

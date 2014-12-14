@@ -309,21 +309,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_Backend\BikeStoreWebApp_Backend.csproj">
-      <Project>{e37c68e0-f622-492e-a78c-0bfd38d3aa76}</Project>
-      <Name>BikeStoreWebApp_Backend</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_Database\BikeStoreWebApp_Database.csproj">
+    <ProjectReference Include="..\..\..\BikeStoreWebApp\BikeStoreWebApp_Database\BikeStoreWebApp_Database.csproj">
       <Project>{02660542-59c7-4682-99e6-6b9722243875}</Project>
       <Name>BikeStoreWebApp_Database</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_Middle\BikeStoreWebApp_Middle.csproj">
-      <Project>{ffdd190e-3840-422d-a90d-c3f974055884}</Project>
-      <Name>BikeStoreWebApp_Middle</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Desktop\IST-440W\Git\BikeStoreWebApp_UnitTestProject\BikeStoreWebApp_UnitTestProject.csproj">
-      <Project>{4e17c827-f3cf-4428-82ab-dba9613fcad8}</Project>
-      <Name>BikeStoreWebApp_UnitTestProject</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

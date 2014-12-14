@@ -1,9 +1,0 @@
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\bin\Debug\BikeStoreWebApp_Database.dll.config
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\bin\Debug\BikeStoreWebApp_Database.dll
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\bin\Debug\BikeStoreWebApp_Database.pdb
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\bin\Debug\EntityFramework.dll
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\bin\Debug\EntityFramework.xml
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\obj\Debug\BikeStoreWebApp_Database.dll
-C:\Users\dipen_test\Desktop\IST-440W\Git\BikeStoreWebApp_Database\obj\Debug\BikeStoreWebApp_Database.pdb
