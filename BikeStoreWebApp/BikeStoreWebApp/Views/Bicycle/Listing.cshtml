@@ -1,0 +1,31 @@
+﻿@Model BikeStoreWebApp.Models.BicycleListing
+{
+    Layout = "~/Views/Shared/_Store.cshtml";
+}
+
+<link rel="stylesheet" href="~/Content/gallery.css">
+<script type="text/javascript" src="~/Scripts/bicycle.js"></script>
+
+<div class="content">
+    <div class="pure-g">
+        <div class="l-box">
+            @foreach (var bicycle in Model)
+            { 
+                <!--1 Product-->
+                <div class="photo-box u-1 u-med-1-2 u-lrg-1-3">
+                    <a id="image" href="/Bicycle/Description/@bicycle.ProductID">
+                        <img src="@bicycle.ThumbNailPhoto" alt="@bicycle.Name" id="@bicycle.ProductID">
+                    </a>
+
+                    <aside class="photo-box-caption" id="@bicycle.ProductID">
+                        <span>Price: @bicycle.ListPrice</span>
+                    </aside>
+                </div>
+            }           
+        </div>
+    </div>
+</div>
+
+<!--Mountain and Road bicycles from AMAZON
+    Touring-http://cyclingabout.com/a-complete-list-of-touring-bicycle-manufacturers-with-prices/
+    -->

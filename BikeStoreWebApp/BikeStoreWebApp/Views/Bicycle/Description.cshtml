@@ -1,0 +1,42 @@
+﻿@Model BikeStoreWebApp.Models.BicycleDescription
+{
+    Layout = "~/Views/Shared/_Store.cshtml";
+}
+
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="/combo/1.17.30?/css/layouts/side-menu-old-ie.css">
+<![endif]-->
+
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="~/Content/sidemenu.css">
+<!--<![endif]-->
+
+<div id="layout">
+    <div id="main">
+    @foreach (var item in Model)
+    {
+        <div class="header">
+            <br />
+            <h1>@item.Product_Name</h1>
+            <h2>Color: @item.Color| Weight: @item.Weight</h2>
+            <h2>Price: </h2>
+            <h3><button class="pure-button" id="shoppingCart">Add to Cart</button></h3> <!--add functionality to this button; add item to cart but do not bring up the cart page.-->
+        </div>
+
+        <div class="content">
+            <h2 class="content-subhead">Insert Images Under Here</h2>
+            <div class="pure-g">
+                <div class="pure-u-1">
+                    <img class="pure-img-responsive" src="" alt="@item.Product_Name">
+                </div>
+            </div>
+
+            <h2 class="content-subhead">Product Description</h2>
+            <p> @item.Description </p>
+
+        </div>
+    }
+    </div>
+</div>
+
+<!--http://www.asp.net/mvc/overview/older-versions/mvc-music-store/mvc-music-store-part-8-->

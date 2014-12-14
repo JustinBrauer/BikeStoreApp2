@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "~/Views/Shared/_Store.cshtml";
+}
+
+<div class="container">
+
+    <div class="pure-g">
+        <div class="pure-u-2-3 l-box">
+            <form class="pure-form pure-form-stacked">
+                <fieldset>
+                    <legend>Your Shopping Cart</legend>
+
+                    <table class="pure-table pure-table-horizontal">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Product</th>
+                                <th>Qty</th>
+                                <th>Price</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td></td>
+                                <td>
+                                    <select id="qty">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </td>
+                                <td></td>
+                                <td><input id="cb" type="checkbox" value=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="pure-button pure-button-primary">Update Cart</button>
+                    <script data-env="sandbox"
+                            data-callback="http://localhost:23740/Bicycle/Confirmation"
+                            data-tax="8"
+                            data-shipping="20"
+                            data-currency="USD"
+                            data-amount="99"
+                            data-quantity="1"
+                            data-name="Bike 1"
+                            data-button="buynow" src="https://www.paypalobjects.com/js/external/paypal-button.min.js?merchant=nxm251-facilitator@psu.edu" async="async"></script>
+
+                            
+
+
+                    <a href="https://api.sandbox.paypal.com/v1/payments/payment/PAY-6RV70583SB702805EKEYSZ6Y" data-paypal-button="true">
+                        <img src="//www.paypalobjects.com/en_US/i/btn/btn_xpressCheckout.gif" alt="Check out with PayPal" />
+                    </a>
+                </fieldset>
+            </form>
+
+            <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+
+                <input type="hidden" name="cmd" value="_xclick" />
+                <input type="hidden" name="business" value="nxm251-facilitator-2@psu.edu" />
+
+                <input type="hidden" name="item_name" value="My painting" />
+                <input type="hidden" name="amount" value="10.00" />
+                <input type="submit" value="Buy!" />
+
+                <input type="hidden" name="shipping" value="3.00" />
+                <input type="hidden" name="handling" value="2.00" />
+
+                <input type="submit" value="Buy with additional parameters!" />
+
+            </form>
+
+
+        </div>
+
+        <div class="pure-u-1-3 l-box">
+            <form class="pure-form pure-form-aligned">
+                <fieldset>
+                    <legend>Your Total</legend>
+
+                    <div class="pure-control-group">
+                        <label for="subtotal">Subtotal</label>
+                        <input id="subtotal" type="text" readonly>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="tax">Tax</label>
+                        <input id="tax" type="text" readonly>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="shipping">Shipping</label>
+                        <input id="shipping" type="text" readonly>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="total">Total</label>
+                        <input id="total" type="text" readonly>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>        
+    </div>
+</div>

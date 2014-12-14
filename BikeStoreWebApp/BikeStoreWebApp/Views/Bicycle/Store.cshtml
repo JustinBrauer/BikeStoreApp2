@@ -1,0 +1,38 @@
+﻿@Model BikeStoreWebApp.Models.StoreHome
+
+<!--https://ajdotnet.wordpress.com/2014/01/19/asp-net-mvc-i18n-part-7-model-attributes/-->
+<!--[if lte IE 8]>
+    <link rel="stylesheet" href="/combo/1.17.30?/css/layouts/pricing-old-ie.css">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<link rel="stylesheet" href="~/Content/pricing.css">
+<!--<![endif]-->
+
+<div class=" content">
+    <div class="banner">
+        <h1 class="banner-head">
+            Are you road ready?
+        </h1>
+    </div>
+
+    <div class="l-content">
+        <div class="pricing-tables pure-g">
+        @foreach (var cat in Model)
+        {
+            <div class="pure-u-md-1-3">
+                <div class="pricing-table pricing-table-biz pricing-table-selected">
+                    <div class="pricing-table-header">
+                        <h2>@cat.categoryName</h2>
+                    </div>
+
+                    <ul class="pricing-table-list">
+                        <img class="pure-img-responsive" alt="@cat.categoryName" width="340" src="@Url.Content(cat.categoryImage)">
+                    </ul>
+
+                    <a class="button-choose pure-button" href="/Bicycle/Listing/@cat.categoryID">@cat.categoryName</a>
+                </div>
+            </div>
+        }
+        </div> <!-- end pricing-tables -->
+    </div> <!-- end l-content -->
+</div>
